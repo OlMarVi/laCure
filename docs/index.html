@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Température & Humidité – Moyennes journalières</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Moyennes horaires (par jour)</h1>
+<canvas id="chart"></canvas>
+
+<script>
+fetch("data.json")
+  .then(res => res.json())
+  .then(data => {
+
+    const grouped = {};
+
+    data.forEach(e => {
+      const day = e.timestamp.split(" ")[0];
+      if (!grouped[day]) grouped[day] = { temp: [], hum: [] };
+      grouped[day].temp.push(e.temperature);
+      grouped[day].hum.push(e.humidity);
+    });
+
+    const labels = Object.keys(grouped);
+    const avgTemp = labels.map(d =>
+      grouped[d].temp.reduce((a,b)=>a+b)/grouped[d].temp.length
+    );
+    const avgHum = labels.map(d =>
+      grouped[d].hum.reduce((a,b)=>a+b)/grouped[d].hum.length
+    );
+
+    new Chart(document.getElementById("chart"), {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
+          { label: "Température (°C)", data: avgTemp },
+          { label: "Humidité (%)", data: avgHum }
+        ]
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
