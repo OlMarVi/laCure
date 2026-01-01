@@ -7,13 +7,18 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 30px; }
     h1 { text-align: center; }
-    canvas { display: block; margin: 0 auto; }
+    canvas { display: block; margin: 40px auto; }
   </style>
 </head>
 <body>
 
 <h1>Moyennes horaires</h1>
-<canvas id="chart" width="1000" height="500"></canvas>
+
+<h2>Température (°C)</h2>
+<canvas id="chartTemp" width="1000" height="400"></canvas>
+
+<h2>Humidité (%)</h2>
+<canvas id="chartHum" width="1000" height="400"></canvas>
 
 <script>
 fetch("./data.json")
@@ -27,61 +32,65 @@ fetch("./data.json")
       return;
     }
 
-    // Regrouper les mesures par heure
+    // Regrouper par heure
     const grouped = {};
     data.forEach(e => {
-      const hour = e.timestamp.slice(0, 13); // YYYY-MM-DD HH
+      const hour = e.timestamp.slice(0,13); // YYYY-MM-DD HH
       if (!grouped[hour]) grouped[hour] = { temp: [], hum: [] };
       grouped[hour].temp.push(Number(e.temperature));
       grouped[hour].hum.push(Number(e.humidity));
     });
 
-    // Trier les heures
     const labels = Object.keys(grouped).sort();
 
-    // Calculer moyennes par heure
+    // Moyenne température par heure
     const avgTemp = labels.map(h => {
       const t = grouped[h].temp;
       return t.reduce((a,b)=>a+b,0)/t.length;
     });
 
+    // Moyenne humidité par heure
     const avgHum = labels.map(h => {
       const hms = grouped[h].hum;
       return hms.reduce((a,b)=>a+b,0)/hms.length;
     });
 
-    // Créer le graphique
-    new Chart(document.getElementById("chart"), {
-      type: "bar", // graphique en barres
+    // Graphique Température
+    new Chart(document.getElementById("chartTemp"), {
+      type: "bar",
       data: {
         labels: labels,
-        datasets: [
-          {
-            label: "Température (°C)",
-            data: avgTemp,
-            backgroundColor: "rgba(255,99,132,0.6)"
-          },
-          {
-            label: "Humidité (%)",
-            data: avgHum,
-            backgroundColor: "rgba(54,162,235,0.6)"
-          }
-        ]
+        datasets: [{
+          label: "Température (°C)",
+          data: avgTemp,
+          backgroundColor: "rgba(255,99,132,0.6)"
+        }]
       },
       options: {
         responsive: true,
         scales: {
-          x: {
-            title: { display: true, text: "Heure" },
-            ticks: { maxRotation: 90, minRotation: 45 }
-          },
-          y: {
-            beginAtZero: false,
-            title: { display: true, text: "Valeurs" }
-          }
-        },
-        plugins: {
-          legend: { position: "top" }
+          x: { title: { display: true, text: "Heure" }, ticks: { maxRotation: 90, minRotation: 45 } },
+          y: { beginAtZero: false, title: { display: true, text: "Température (°C)" } }
+        }
+      }
+    });
+
+    // Graphique Humidité
+    new Chart(document.getElementById("chartHum"), {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [{
+          label: "Humidité (%)",
+          data: avgHum,
+          backgroundColor: "rgba(54,162,235,0.6)"
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: { title: { display: true, text: "Heure" }, ticks: { maxRotation: 90, minRotation: 45 } },
+          y: { beginAtZero: true, title: { display: true, text: "Humidité (%)" } }
         }
       }
     });
