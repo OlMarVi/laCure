@@ -8,5 +8,15 @@
     "timestamp": "2026-01-01 15:20:00",
     "temperature": 20.7,
     "humidity": 40.3
+  },
+  {
+    "timestamp": "2026-01-01 15:25:00",
+    "temperature": 20.7,
+    "humidity": 40.3
+  },
+  {
+    "timestamp": "2026-01-01 15:30:00",
+    "temperature": 20.7,
+    "humidity": 40.3
   }
 ]
