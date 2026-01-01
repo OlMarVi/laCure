@@ -1,47 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Température & Humidité – Moyennes journalières</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="utf-8">
+  <title>Température & Humidité – Moyennes horaires</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    h1 { text-align: center; }
+    canvas { display: block; margin: 0 auto; }
+  </style>
 </head>
 <body>
-<h1>Moyennes horaires (par jour)</h1>
-<canvas id="chart"></canvas>
+
+<h1>Moyennes horaires</h1>
+<canvas id="chart" width="1000" height="500"></canvas>
 
 <script>
-fetch("data.json")
-  .then(res => res.json())
+fetch("./data.json")
+  .then(res => {
+    if (!res.ok) throw new Error("Erreur chargement data.json");
+    return res.json();
+  })
   .then(data => {
+    if (!data.length) {
+      alert("data.json est vide");
+      return;
+    }
 
+    // Regrouper les mesures par heure
     const grouped = {};
-
     data.forEach(e => {
-      const day = e.timestamp.split(" ")[0];
-      if (!grouped[day]) grouped[day] = { temp: [], hum: [] };
-      grouped[day].temp.push(e.temperature);
-      grouped[day].hum.push(e.humidity);
+      const hour = e.timestamp.slice(0, 13); // YYYY-MM-DD HH
+      if (!grouped[hour]) grouped[hour] = { temp: [], hum: [] };
+      grouped[hour].temp.push(Number(e.temperature));
+      grouped[hour].hum.push(Number(e.humidity));
     });
 
-    const labels = Object.keys(grouped);
-    const avgTemp = labels.map(d =>
-      grouped[d].temp.reduce((a,b)=>a+b)/grouped[d].temp.length
-    );
-    const avgHum = labels.map(d =>
-      grouped[d].hum.reduce((a,b)=>a+b)/grouped[d].hum.length
-    );
+    // Trier les heures
+    const labels = Object.keys(grouped).sort();
 
+    // Calculer moyennes par heure
+    const avgTemp = labels.map(h => {
+      const t = grouped[h].temp;
+      return t.reduce((a,b)=>a+b,0)/t.length;
+    });
+
+    const avgHum = labels.map(h => {
+      const hms = grouped[h].hum;
+      return hms.reduce((a,b)=>a+b,0)/hms.length;
+    });
+
+    // Créer le graphique
     new Chart(document.getElementById("chart"), {
-      type: "line",
+      type: "bar", // graphique en barres
       data: {
-        labels,
+        labels: labels,
         datasets: [
-          { label: "Température (°C)", data: avgTemp },
-          { label: "Humidité (%)", data: avgHum }
+          {
+            label: "Température (°C)",
+            data: avgTemp,
+            backgroundColor: "rgba(255,99,132,0.6)"
+          },
+          {
+            label: "Humidité (%)",
+            data: avgHum,
+            backgroundColor: "rgba(54,162,235,0.6)"
+          }
         ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            title: { display: true, text: "Heure" },
+            ticks: { maxRotation: 90, minRotation: 45 }
+          },
+          y: {
+            beginAtZero: false,
+            title: { display: true, text: "Valeurs" }
+          }
+        },
+        plugins: {
+          legend: { position: "top" }
+        }
       }
     });
+
+  })
+  .catch(err => {
+    console.error(err);
+    alert(err.message);
   });
 </script>
+
 </body>
 </html>
-
