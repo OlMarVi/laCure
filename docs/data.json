@@ -28,5 +28,10 @@
     "timestamp": "2026-01-02 21:12:44",
     "temperature": 19.5,
     "humidity": 43.7
+  },
+  {
+    "timestamp": "2026-01-02 21:42:45",
+    "temperature": 19.5,
+    "humidity": 43.8
   }
 ]
