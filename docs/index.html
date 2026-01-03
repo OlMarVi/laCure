@@ -45,14 +45,14 @@ fetch("./data.json")
 
     // Moyenne température par heure
     const avgTemp = labels.map(h => {
-      const t = grouped[h].temp;
-      return t.reduce((a,b)=>a+b,0)/t.length;
+      const values = grouped[h].temp.map(Number);
+  return values.reduce((a,b)=>a+b, 0) / values.length;
     });
 
     // Moyenne humidité par heure
     const avgHum = labels.map(h => {
-      const hms = grouped[h].hum;
-      return hms.reduce((a,b)=>a+b,0)/hms.length;
+      const values = grouped[h].hum.map(Number);
+  return values.reduce((a,b)=>a+b, 0) / values.length;
     });
 
     // Graphique Température
