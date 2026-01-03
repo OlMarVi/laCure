@@ -2,17 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Température & Humidité – Moyennes horaires</title>
+  <title>Température & Humidité – Journée et Tendance Annuelle</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
   <style>
     body { font-family: Arial, sans-serif; margin: 30px; }
-    h1 { text-align: center; }
+    h1, h2 { text-align: center; }
     canvas { display: block; margin: 40px auto; }
   </style>
 </head>
 <body>
 
-<h1>Moyennes horaires</h1>
+<h1>Moyennes horaires – Jour courant</h1>
 
 <h2>Température (°C)</h2>
 <canvas id="chartTemp" width="1000" height="400"></canvas>
@@ -20,86 +20,103 @@
 <h2>Humidité (%)</h2>
 <canvas id="chartHum" width="1000" height="400"></canvas>
 
-<script>
-fetch("./data.json")
-  .then(res => {
-    if (!res.ok) throw new Error("Erreur chargement data.json");
-    return res.json();
-  })
-  .then(data => {
-    if (!data.length) {
-      alert("data.json est vide");
-      return;
-    }
+<h1>Tendance annuelle – Statistiques journalières</h1>
 
-    // Regrouper par heure
+<h2>Température (°C)</h2>
+<canvas id="chartYearTemp" width="1000" height="400"></canvas>
+
+<h2>Humidité (%)</h2>
+<canvas id="chartYearHum" width="1000" height="400"></canvas>
+
+<script>
+
+Promise.all([
+  fetch("./data.json")
+    .then(r => r.text())
+    .then(t => t.trim() ? JSON.parse(t) : []),
+
+  fetch("./stats.json")
+    .then(r => r.text())
+    .then(t => t.trim() ? JSON.parse(t) : [])
+])
+.then(([dailyData, statsData]) => {
+
+  // -------------------
+  // Graphiques jour courant
+  // -------------------
+  if(dailyData.length){
     const grouped = {};
-    data.forEach(e => {
+    dailyData.forEach(e => {
       const hour = e.timestamp.slice(0,13); // YYYY-MM-DD HH
-      if (!grouped[hour]) grouped[hour] = { temp: [], hum: [] };
+      if(!grouped[hour]) grouped[hour]={temp:[], hum:[]};
       grouped[hour].temp.push(Number(e.temperature));
       grouped[hour].hum.push(Number(e.humidity));
     });
 
     const labels = Object.keys(grouped).sort();
+    const avgTemp = labels.map(h => grouped[h].temp.reduce((a,b)=>a+b,0)/grouped[h].temp.length);
+    const avgHum = labels.map(h => grouped[h].hum.reduce((a,b)=>a+b,0)/grouped[h].hum.length);
 
-    // Moyenne température par heure
-    const avgTemp = labels.map(h => {
-      const values = grouped[h].temp.map(Number);
-  return values.reduce((a,b)=>a+b, 0) / values.length;
-    });
-
-    // Moyenne humidité par heure
-    const avgHum = labels.map(h => {
-      const values = grouped[h].hum.map(Number);
-  return values.reduce((a,b)=>a+b, 0) / values.length;
-    });
-
-    // Graphique Température
+    // Température
     new Chart(document.getElementById("chartTemp"), {
-      type: "bar",
-      data: {
-        labels: labels,
-        datasets: [{
-          label: "Température (°C)",
-          data: avgTemp,
-          backgroundColor: "rgba(255,99,132,0.6)"
-        }]
-      },
-      options: {
-        responsive: true,
-        scales: {
-          x: { title: { display: true, text: "Heure" }, ticks: { maxRotation: 90, minRotation: 45 } },
-          y: { beginAtZero: false, title: { display: true, text: "Température (°C)" } }
-        }
-      }
+      type:"bar",
+      data:{labels, datasets:[{label:"Température (°C)", data:avgTemp, backgroundColor:"rgba(255,99,132,0.6)"}]},
+      options:{responsive:true, scales:{x:{title:{display:true,text:"Heure"}}, y:{beginAtZero:false,title:{display:true,text:"Température (°C)"}}}}
     });
 
-    // Graphique Humidité
+    // Humidité
     new Chart(document.getElementById("chartHum"), {
-      type: "bar",
-      data: {
-        labels: labels,
-        datasets: [{
-          label: "Humidité (%)",
-          data: avgHum,
-          backgroundColor: "rgba(54,162,235,0.6)"
-        }]
+      type:"bar",
+      data:{labels, datasets:[{label:"Humidité (%)", data:avgHum, backgroundColor:"rgba(54,162,235,0.6)"}]},
+      options:{responsive:true, scales:{x:{title:{display:true,text:"Heure"}}, y:{beginAtZero:true,title:{display:true,text:"Humidité (%)"}}}}
+    });
+  }
+
+  // -------------------
+  // Graphiques tendance annuelle
+  // -------------------
+  if(statsData.length){
+    const labels = statsData.map(d=>d.date);
+    const tempMin = statsData.map(d=>d.temp_min);
+    const tempMax = statsData.map(d=>d.temp_max);
+    const tempAvg = statsData.map(d=>d.temp_avg);
+    const humMin = statsData.map(d=>d.hum_min);
+    const humMax = statsData.map(d=>d.hum_max);
+    const humAvg = statsData.map(d=>d.hum_avg);
+
+    // Température annuelle
+    new Chart(document.getElementById("chartYearTemp"), {
+      type:"line",
+      data:{
+        labels,
+        datasets:[
+          {label:"Temp Min", data:tempMin, borderColor:"blue", fill:false, tension:0.2},
+          {label:"Temp Max", data:tempMax, borderColor:"red", fill:false, tension:0.2},
+          {label:"Temp Moyenne", data:tempAvg, borderColor:"green", fill:false, tension:0.2}
+        ]
       },
-      options: {
-        responsive: true,
-        scales: {
-          x: { title: { display: true, text: "Heure" }, ticks: { maxRotation: 90, minRotation: 45 } },
-          y: { beginAtZero: true, title: { display: true, text: "Humidité (%)" } }
-        }
-      }
+      options:{responsive:true, scales:{y:{title:{display:true,text:"Température (°C)"}}}}
     });
 
-  })
-  .catch(err => {
-    console.error(err);
-    alert(err.message);
-  });
+    // Humidité annuelle
+    new Chart(document.getElementById("chartYearHum"), {
+      type:"line",
+      data:{
+        labels,
+        datasets:[
+          {label:"Hum Min", data:humMin, borderColor:"blue", fill:false, tension:0.2},
+          {label:"Hum Max", data:humMax, borderColor:"red", fill:false, tension:0.2},
+          {label:"Hum Moyenne", data:humAvg, borderColor:"green", fill:false, tension:0.2}
+        ]
+      },
+      options:{responsive:true, scales:{y:{title:{display:true,text:"Humidité (%)"}}}}
+    });
+  }
+
+}).catch(err=>{
+  console.error(err);
+  alert("Erreur chargement JSON: "+err.message);
+});
 </script>
 
 </body>
