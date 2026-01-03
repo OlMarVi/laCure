@@ -19,11 +19,12 @@ REPO_DIR = "/home/pi/web-server"   # change selon ton chemin
 # ==============================
 # Flask (optionnel – local)
 # ==============================
-app = Flask(__name__)
+app = Flask(__name__, static_folder="docs", static_url_path="")
 
 @app.route("/")
 def index():
-    return "App running. Data written to docs/data.json"
+    return app.send_static_file("index.html")
+
 
 # ==============================
 # Connexion série
@@ -124,3 +125,5 @@ if __name__ == "__main__":
 
     # Flask uniquement pour debug local
     app.run(host="0.0.0.0", port=5001, debug=False, use_reloader=False)
+
+
