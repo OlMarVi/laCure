@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Météo de la Cure</title>
+</head>
+<body>
+    <h1>Météo de la Cure</h1>
+    {% if temperature is not none and humidity is not none %}
+        <p><strong>Température :</strong> {{ temperature }} °C</p>
+        <p><strong>Humidité :</strong> {{ humidity }} %</p>
+        <p><strong>Dernière mise à jour :</strong> {{ timestamp }}</p>
+    {% else %}
+        <p><em>Erreur lors de la lecture des données capteur.</em></p>
+    {% endif %}
+</body>
+</html>
