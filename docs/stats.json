@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "date": "2026-01-10",
+    "temp_min": 4.0,
+    "temp_max": 4.1,
+    "temp_avg": 4.06,
+    "hum_min": 65.7,
+    "hum_max": 65.9,
+    "hum_avg": 65.82
+  }
+]
