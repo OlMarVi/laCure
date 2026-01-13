@@ -118,5 +118,125 @@
     "timestamp": "2026-01-13 11:43:47",
     "temperature": 4.1,
     "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 12:13:47",
+    "temperature": 4.1,
+    "humidity": 66.0
+  },
+  {
+    "timestamp": "2026-01-13 12:43:47",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 13:13:47",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 13:43:47",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 14:13:47",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 14:43:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 15:13:48",
+    "temperature": 4.1,
+    "humidity": 65.8
+  },
+  {
+    "timestamp": "2026-01-13 15:43:48",
+    "temperature": 4.1,
+    "humidity": 65.8
+  },
+  {
+    "timestamp": "2026-01-13 16:13:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 16:43:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 17:13:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 17:43:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 18:13:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 18:43:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 19:13:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 19:43:48",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 20:13:49",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 20:43:49",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 21:13:49",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 21:43:49",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 22:13:49",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 22:43:49",
+    "temperature": 4.1,
+    "humidity": 65.9
+  },
+  {
+    "timestamp": "2026-01-13 23:13:49",
+    "temperature": 4.1,
+    "humidity": 66.0
+  },
+  {
+    "timestamp": "2026-01-13 23:43:49",
+    "temperature": 4.1,
+    "humidity": 66.0
   }
 ]
