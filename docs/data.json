@@ -88,5 +88,10 @@
     "timestamp": "2026-01-14 08:43:51",
     "temperature": 4.1,
     "humidity": 66.0
+  },
+  {
+    "timestamp": "2026-01-14 10:05:14",
+    "temperature": 10.1,
+    "humidity": 68.9
   }
 ]
