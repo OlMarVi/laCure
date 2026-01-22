@@ -38,5 +38,125 @@
     "timestamp": "2026-01-22 03:50:47",
     "temperature": 8.0,
     "humidity": 67.0
+  },
+  {
+    "timestamp": "2026-01-22 04:20:48",
+    "temperature": 8.1,
+    "humidity": 66.8
+  },
+  {
+    "timestamp": "2026-01-22 04:50:50",
+    "temperature": 8.0,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 05:20:52",
+    "temperature": 8.0,
+    "humidity": 66.8
+  },
+  {
+    "timestamp": "2026-01-22 05:50:53",
+    "temperature": 8.1,
+    "humidity": 66.7
+  },
+  {
+    "timestamp": "2026-01-22 06:20:55",
+    "temperature": 8.0,
+    "humidity": 66.8
+  },
+  {
+    "timestamp": "2026-01-22 06:50:57",
+    "temperature": 8.1,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 07:20:59",
+    "temperature": 8.1,
+    "humidity": 66.7
+  },
+  {
+    "timestamp": "2026-01-22 07:51:00",
+    "temperature": 8.1,
+    "humidity": 66.8
+  },
+  {
+    "timestamp": "2026-01-22 08:21:02",
+    "temperature": 8.1,
+    "humidity": 66.7
+  },
+  {
+    "timestamp": "2026-01-22 08:51:04",
+    "temperature": 8.1,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 09:21:05",
+    "temperature": 7.9,
+    "humidity": 67.5
+  },
+  {
+    "timestamp": "2026-01-22 09:51:07",
+    "temperature": 8.1,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 10:21:09",
+    "temperature": 8.1,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 10:51:10",
+    "temperature": 8.1,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 11:21:12",
+    "temperature": 8.1,
+    "humidity": 66.9
+  },
+  {
+    "timestamp": "2026-01-22 11:51:14",
+    "temperature": 8.1,
+    "humidity": 67.0
+  },
+  {
+    "timestamp": "2026-01-22 12:21:16",
+    "temperature": 8.1,
+    "humidity": 67.1
+  },
+  {
+    "timestamp": "2026-01-22 12:51:17",
+    "temperature": 8.1,
+    "humidity": 67.0
+  },
+  {
+    "timestamp": "2026-01-22 13:21:19",
+    "temperature": 8.1,
+    "humidity": 67.3
+  },
+  {
+    "timestamp": "2026-01-22 13:51:21",
+    "temperature": 8.2,
+    "humidity": 67.3
+  },
+  {
+    "timestamp": "2026-01-22 14:21:22",
+    "temperature": 8.2,
+    "humidity": 67.2
+  },
+  {
+    "timestamp": "2026-01-22 14:51:24",
+    "temperature": 8.2,
+    "humidity": 67.3
+  },
+  {
+    "timestamp": "2026-01-22 15:21:25",
+    "temperature": 8.2,
+    "humidity": 67.5
+  },
+  {
+    "timestamp": "2026-01-22 15:51:27",
+    "temperature": 8.2,
+    "humidity": 67.4
   }
 ]
