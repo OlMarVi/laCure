@@ -1,167 +1,47 @@
 [
   {
-    "timestamp": "2026-03-25 00:12:50",
-    "temperature": 17.0,
-    "humidity": 48.7
+    "timestamp": "2026-03-26 00:14:08",
+    "temperature": 14.5,
+    "humidity": 52.6
   },
   {
-    "timestamp": "2026-03-25 00:42:52",
-    "temperature": 16.6,
-    "humidity": 49.1
+    "timestamp": "2026-03-26 00:44:09",
+    "temperature": 14.5,
+    "humidity": 52.8
   },
   {
-    "timestamp": "2026-03-25 01:12:53",
-    "temperature": 16.9,
-    "humidity": 48.5
+    "timestamp": "2026-03-26 01:14:11",
+    "temperature": 14.5,
+    "humidity": 52.6
   },
   {
-    "timestamp": "2026-03-25 01:42:55",
-    "temperature": 16.1,
-    "humidity": 50.2
+    "timestamp": "2026-03-26 01:44:12",
+    "temperature": 14.3,
+    "humidity": 52.8
   },
   {
-    "timestamp": "2026-03-25 02:12:57",
-    "temperature": 15.5,
-    "humidity": 51.2
-  },
-  {
-    "timestamp": "2026-03-25 02:42:58",
-    "temperature": 16.1,
-    "humidity": 50.2
-  },
-  {
-    "timestamp": "2026-03-25 03:13:00",
-    "temperature": 15.2,
-    "humidity": 51.6
-  },
-  {
-    "timestamp": "2026-03-25 03:43:02",
-    "temperature": 14.8,
-    "humidity": 52.2
-  },
-  {
-    "timestamp": "2026-03-25 04:13:03",
-    "temperature": 15.0,
-    "humidity": 52.1
-  },
-  {
-    "timestamp": "2026-03-25 04:43:05",
-    "temperature": 15.1,
-    "humidity": 51.8
-  },
-  {
-    "timestamp": "2026-03-25 05:13:06",
-    "temperature": 15.1,
-    "humidity": 51.6
-  },
-  {
-    "timestamp": "2026-03-25 05:43:08",
-    "temperature": 15.1,
-    "humidity": 51.7
-  },
-  {
-    "timestamp": "2026-03-25 06:13:09",
-    "temperature": 14.8,
-    "humidity": 52.1
-  },
-  {
-    "timestamp": "2026-03-25 06:43:11",
-    "temperature": 15.0,
-    "humidity": 51.8
-  },
-  {
-    "timestamp": "2026-03-25 07:13:13",
-    "temperature": 14.8,
-    "humidity": 52.1
-  },
-  {
-    "timestamp": "2026-03-25 07:43:14",
-    "temperature": 14.6,
-    "humidity": 52.4
-  },
-  {
-    "timestamp": "2026-03-25 08:13:16",
-    "temperature": 15.2,
-    "humidity": 51.4
-  },
-  {
-    "timestamp": "2026-03-25 08:43:17",
-    "temperature": 15.6,
-    "humidity": 50.3
-  },
-  {
-    "timestamp": "2026-03-25 09:13:19",
-    "temperature": 15.7,
-    "humidity": 50.1
-  },
-  {
-    "timestamp": "2026-03-25 09:43:21",
-    "temperature": 16.2,
-    "humidity": 49.6
-  },
-  {
-    "timestamp": "2026-03-25 10:13:23",
-    "temperature": 15.8,
-    "humidity": 50.3
-  },
-  {
-    "timestamp": "2026-03-25 10:43:24",
-    "temperature": 16.6,
-    "humidity": 48.9
-  },
-  {
-    "timestamp": "2026-03-25 11:13:26",
-    "temperature": 16.7,
-    "humidity": 48.9
-  },
-  {
-    "timestamp": "2026-03-25 11:43:28",
-    "temperature": 16.4,
-    "humidity": 49.8
-  },
-  {
-    "timestamp": "2026-03-25 12:13:29",
-    "temperature": 16.6,
-    "humidity": 49.8
-  },
-  {
-    "timestamp": "2026-03-25 12:43:31",
-    "temperature": 16.9,
-    "humidity": 49.4
-  },
-  {
-    "timestamp": "2026-03-25 13:13:33",
-    "temperature": 16.8,
-    "humidity": 49.7
-  },
-  {
-    "timestamp": "2026-03-25 13:43:34",
-    "temperature": 16.1,
-    "humidity": 51.6
-  },
-  {
-    "timestamp": "2026-03-25 14:13:36",
-    "temperature": 16.4,
-    "humidity": 51.1
-  },
-  {
-    "timestamp": "2026-03-25 14:43:38",
-    "temperature": 15.6,
+    "timestamp": "2026-03-26 02:14:14",
+    "temperature": 14.5,
     "humidity": 52.5
   },
   {
-    "timestamp": "2026-03-25 15:13:39",
-    "temperature": 16.2,
-    "humidity": 51.3
+    "timestamp": "2026-03-26 02:44:16",
+    "temperature": 14.2,
+    "humidity": 52.9
   },
   {
-    "timestamp": "2026-03-25 15:43:41",
-    "temperature": 16.5,
-    "humidity": 50.9
+    "timestamp": "2026-03-26 03:14:17",
+    "temperature": 14.9,
+    "humidity": 51.4
   },
   {
-    "timestamp": "2026-03-25 16:13:42",
-    "temperature": 16.4,
-    "humidity": 51.0
+    "timestamp": "2026-03-26 03:44:19",
+    "temperature": 14.6,
+    "humidity": 51.8
+  },
+  {
+    "timestamp": "2026-03-26 04:14:20",
+    "temperature": 14.6,
+    "humidity": 51.6
   }
 ]
