@@ -1,22 +1,22 @@
 [
   {
-    "timestamp": "2026-05-31 08:01:42",
-    "temperature": 25.3,
-    "humidity": 55.3
+    "timestamp": "2026-06-01 00:28:10",
+    "temperature": 26.7,
+    "humidity": 56.4
   },
   {
-    "timestamp": "2026-05-31 08:31:43",
-    "temperature": 25.6,
-    "humidity": 54.8
+    "timestamp": "2026-06-01 00:58:11",
+    "temperature": 26.7,
+    "humidity": 56.4
   },
   {
-    "timestamp": "2026-05-31 09:01:45",
-    "temperature": 25.7,
-    "humidity": 54.9
+    "timestamp": "2026-06-01 01:28:13",
+    "temperature": 26.7,
+    "humidity": 56.4
   },
   {
-    "timestamp": "2026-05-31 09:31:46",
-    "temperature": 25.9,
-    "humidity": 54.5
+    "timestamp": "2026-06-01 01:58:14",
+    "temperature": 26.6,
+    "humidity": 56.5
   }
 ]
