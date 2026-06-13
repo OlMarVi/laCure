@@ -23,5 +23,125 @@
     "timestamp": "2026-06-13 02:14:07",
     "temperature": 22.5,
     "humidity": 55.3
+  },
+  {
+    "timestamp": "2026-06-13 02:44:08",
+    "temperature": 22.4,
+    "humidity": 55.4
+  },
+  {
+    "timestamp": "2026-06-13 03:14:10",
+    "temperature": 22.4,
+    "humidity": 55.5
+  },
+  {
+    "timestamp": "2026-06-13 03:44:11",
+    "temperature": 22.4,
+    "humidity": 55.6
+  },
+  {
+    "timestamp": "2026-06-13 04:14:13",
+    "temperature": 22.4,
+    "humidity": 55.6
+  },
+  {
+    "timestamp": "2026-06-13 04:44:15",
+    "temperature": 22.3,
+    "humidity": 55.7
+  },
+  {
+    "timestamp": "2026-06-13 05:14:16",
+    "temperature": 22.3,
+    "humidity": 55.7
+  },
+  {
+    "timestamp": "2026-06-13 05:44:18",
+    "temperature": 22.4,
+    "humidity": 55.7
+  },
+  {
+    "timestamp": "2026-06-13 06:14:20",
+    "temperature": 22.4,
+    "humidity": 55.7
+  },
+  {
+    "timestamp": "2026-06-13 06:44:21",
+    "temperature": 22.5,
+    "humidity": 55.7
+  },
+  {
+    "timestamp": "2026-06-13 07:14:23",
+    "temperature": 22.5,
+    "humidity": 55.7
+  },
+  {
+    "timestamp": "2026-06-13 07:44:25",
+    "temperature": 22.6,
+    "humidity": 55.8
+  },
+  {
+    "timestamp": "2026-06-13 08:14:26",
+    "temperature": 22.6,
+    "humidity": 55.8
+  },
+  {
+    "timestamp": "2026-06-13 08:44:28",
+    "temperature": 22.6,
+    "humidity": 55.9
+  },
+  {
+    "timestamp": "2026-06-13 09:14:29",
+    "temperature": 22.7,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-06-13 09:44:31",
+    "temperature": 22.9,
+    "humidity": 56.9
+  },
+  {
+    "timestamp": "2026-06-13 10:14:33",
+    "temperature": 23.1,
+    "humidity": 57.6
+  },
+  {
+    "timestamp": "2026-06-13 10:44:34",
+    "temperature": 23.4,
+    "humidity": 57.8
+  },
+  {
+    "timestamp": "2026-06-13 11:14:36",
+    "temperature": 23.6,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-06-13 11:44:38",
+    "temperature": 23.6,
+    "humidity": 56.6
+  },
+  {
+    "timestamp": "2026-06-13 12:14:39",
+    "temperature": 23.8,
+    "humidity": 56.2
+  },
+  {
+    "timestamp": "2026-06-13 12:44:41",
+    "temperature": 23.9,
+    "humidity": 55.3
+  },
+  {
+    "timestamp": "2026-06-13 13:14:43",
+    "temperature": 24.0,
+    "humidity": 54.8
+  },
+  {
+    "timestamp": "2026-06-13 13:44:44",
+    "temperature": 24.0,
+    "humidity": 53.2
+  },
+  {
+    "timestamp": "2026-06-13 14:14:46",
+    "temperature": 24.2,
+    "humidity": 53.2
   }
 ]
