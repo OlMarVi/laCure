@@ -1,147 +1,27 @@
 [
   {
-    "timestamp": "2026-06-14 00:15:17",
-    "temperature": 23.9,
-    "humidity": 54.5
-  },
-  {
-    "timestamp": "2026-06-14 00:45:19",
-    "temperature": 23.9,
-    "humidity": 54.7
-  },
-  {
-    "timestamp": "2026-06-14 01:15:21",
-    "temperature": 23.9,
+    "timestamp": "2026-06-15 00:16:35",
+    "temperature": 24.4,
     "humidity": 54.8
   },
   {
-    "timestamp": "2026-06-14 01:45:22",
-    "temperature": 23.8,
+    "timestamp": "2026-06-15 00:46:37",
+    "temperature": 24.4,
+    "humidity": 54.9
+  },
+  {
+    "timestamp": "2026-06-15 01:16:38",
+    "temperature": 24.4,
     "humidity": 54.8
   },
   {
-    "timestamp": "2026-06-14 02:15:24",
-    "temperature": 23.9,
+    "timestamp": "2026-06-15 01:46:40",
+    "temperature": 24.4,
     "humidity": 54.8
   },
   {
-    "timestamp": "2026-06-14 02:45:26",
-    "temperature": 23.9,
+    "timestamp": "2026-06-15 02:16:42",
+    "temperature": 24.4,
     "humidity": 54.8
-  },
-  {
-    "timestamp": "2026-06-14 03:15:27",
-    "temperature": 23.8,
-    "humidity": 55.0
-  },
-  {
-    "timestamp": "2026-06-14 03:45:29",
-    "temperature": 23.8,
-    "humidity": 55.0
-  },
-  {
-    "timestamp": "2026-06-14 04:15:31",
-    "temperature": 23.8,
-    "humidity": 55.1
-  },
-  {
-    "timestamp": "2026-06-14 04:45:32",
-    "temperature": 23.8,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 05:15:34",
-    "temperature": 23.8,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 05:45:36",
-    "temperature": 23.8,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 06:15:37",
-    "temperature": 23.7,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 06:45:39",
-    "temperature": 23.8,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 07:15:41",
-    "temperature": 23.8,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 07:45:42",
-    "temperature": 23.8,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 08:15:44",
-    "temperature": 23.9,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 08:45:46",
-    "temperature": 24.0,
-    "humidity": 55.1
-  },
-  {
-    "timestamp": "2026-06-14 09:15:47",
-    "temperature": 24.0,
-    "humidity": 55.0
-  },
-  {
-    "timestamp": "2026-06-14 09:45:49",
-    "temperature": 24.0,
-    "humidity": 55.1
-  },
-  {
-    "timestamp": "2026-06-14 10:15:50",
-    "temperature": 24.0,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 10:45:52",
-    "temperature": 24.0,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 11:15:53",
-    "temperature": 24.0,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 11:45:55",
-    "temperature": 24.0,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 12:15:57",
-    "temperature": 24.0,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 12:45:58",
-    "temperature": 24.0,
-    "humidity": 55.3
-  },
-  {
-    "timestamp": "2026-06-14 13:16:00",
-    "temperature": 24.0,
-    "humidity": 55.2
-  },
-  {
-    "timestamp": "2026-06-14 13:46:02",
-    "temperature": 24.1,
-    "humidity": 55.1
-  },
-  {
-    "timestamp": "2026-06-14 14:16:03",
-    "temperature": 24.1,
-    "humidity": 55.1
   }
 ]
