@@ -143,5 +143,15 @@
     "timestamp": "2026-06-27 14:19:10",
     "temperature": 32.5,
     "humidity": 35.4
+  },
+  {
+    "timestamp": "2026-06-27 15:08:20",
+    "temperature": 33.3,
+    "humidity": 35.3
+  },
+  {
+    "timestamp": "2026-06-27 15:38:22",
+    "temperature": 33.6,
+    "humidity": 34.5
   }
 ]
