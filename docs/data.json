@@ -108,5 +108,60 @@
     "timestamp": "2026-09-12 10:33:01",
     "temperature": 22.0,
     "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 11:03:02",
+    "temperature": 22.1,
+    "humidity": 43.7
+  },
+  {
+    "timestamp": "2026-09-12 11:33:04",
+    "temperature": 22.1,
+    "humidity": 43.7
+  },
+  {
+    "timestamp": "2026-09-12 12:03:06",
+    "temperature": 22.1,
+    "humidity": 43.7
+  },
+  {
+    "timestamp": "2026-09-12 12:33:08",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 13:03:09",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 13:33:11",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 14:03:13",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 14:33:15",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 15:03:16",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 15:33:18",
+    "temperature": 22.1,
+    "humidity": 43.8
+  },
+  {
+    "timestamp": "2026-09-12 16:03:20",
+    "temperature": 22.2,
+    "humidity": 43.8
   }
 ]
