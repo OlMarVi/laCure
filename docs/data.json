@@ -63,5 +63,15 @@
     "timestamp": "2026-09-28 06:07:08",
     "temperature": 23.2,
     "humidity": 50.3
+  },
+  {
+    "timestamp": "2026-09-28 06:37:09",
+    "temperature": 23.2,
+    "humidity": 50.0
+  },
+  {
+    "timestamp": "2026-09-28 07:07:11",
+    "temperature": 23.1,
+    "humidity": 50.0
   }
 ]
