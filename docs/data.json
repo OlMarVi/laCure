@@ -58,5 +58,125 @@
     "timestamp": "2026-09-30 05:50:55",
     "temperature": 23.4,
     "humidity": 46.1
+  },
+  {
+    "timestamp": "2026-09-30 06:20:57",
+    "temperature": 23.4,
+    "humidity": 46.2
+  },
+  {
+    "timestamp": "2026-09-30 06:50:59",
+    "temperature": 23.3,
+    "humidity": 46.1
+  },
+  {
+    "timestamp": "2026-09-30 07:21:00",
+    "temperature": 23.3,
+    "humidity": 45.9
+  },
+  {
+    "timestamp": "2026-09-30 07:51:02",
+    "temperature": 23.3,
+    "humidity": 45.8
+  },
+  {
+    "timestamp": "2026-09-30 08:21:04",
+    "temperature": 23.2,
+    "humidity": 46.0
+  },
+  {
+    "timestamp": "2026-09-30 08:51:06",
+    "temperature": 23.2,
+    "humidity": 45.7
+  },
+  {
+    "timestamp": "2026-09-30 09:21:07",
+    "temperature": 23.2,
+    "humidity": 46.2
+  },
+  {
+    "timestamp": "2026-09-30 09:51:09",
+    "temperature": 23.2,
+    "humidity": 46.0
+  },
+  {
+    "timestamp": "2026-09-30 10:21:11",
+    "temperature": 23.3,
+    "humidity": 46.0
+  },
+  {
+    "timestamp": "2026-09-30 10:51:13",
+    "temperature": 23.2,
+    "humidity": 46.2
+  },
+  {
+    "timestamp": "2026-09-30 11:21:14",
+    "temperature": 23.2,
+    "humidity": 46.6
+  },
+  {
+    "timestamp": "2026-09-30 11:51:16",
+    "temperature": 23.3,
+    "humidity": 46.9
+  },
+  {
+    "timestamp": "2026-09-30 12:21:18",
+    "temperature": 23.2,
+    "humidity": 47.2
+  },
+  {
+    "timestamp": "2026-09-30 12:51:20",
+    "temperature": 23.2,
+    "humidity": 47.8
+  },
+  {
+    "timestamp": "2026-09-30 13:21:21",
+    "temperature": 23.3,
+    "humidity": 47.5
+  },
+  {
+    "timestamp": "2026-09-30 13:51:23",
+    "temperature": 23.3,
+    "humidity": 47.4
+  },
+  {
+    "timestamp": "2026-09-30 14:21:25",
+    "temperature": 23.3,
+    "humidity": 47.8
+  },
+  {
+    "timestamp": "2026-09-30 14:51:27",
+    "temperature": 23.3,
+    "humidity": 50.2
+  },
+  {
+    "timestamp": "2026-09-30 15:21:28",
+    "temperature": 23.3,
+    "humidity": 50.5
+  },
+  {
+    "timestamp": "2026-09-30 15:51:30",
+    "temperature": 23.4,
+    "humidity": 50.2
+  },
+  {
+    "timestamp": "2026-09-30 16:21:32",
+    "temperature": 23.3,
+    "humidity": 51.2
+  },
+  {
+    "timestamp": "2026-09-30 16:51:34",
+    "temperature": 23.4,
+    "humidity": 51.3
+  },
+  {
+    "timestamp": "2026-09-30 17:21:35",
+    "temperature": 23.4,
+    "humidity": 52.0
+  },
+  {
+    "timestamp": "2026-09-30 17:51:37",
+    "temperature": 23.4,
+    "humidity": 51.9
   }
 ]
