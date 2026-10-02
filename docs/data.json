@@ -58,5 +58,25 @@
     "timestamp": "2026-10-02 05:53:40",
     "temperature": 22.2,
     "humidity": 52.9
+  },
+  {
+    "timestamp": "2026-10-02 06:23:41",
+    "temperature": 22.2,
+    "humidity": 52.9
+  },
+  {
+    "timestamp": "2026-10-02 06:53:43",
+    "temperature": 22.1,
+    "humidity": 52.8
+  },
+  {
+    "timestamp": "2026-10-02 07:23:45",
+    "temperature": 22.1,
+    "humidity": 52.8
+  },
+  {
+    "timestamp": "2026-10-02 07:53:46",
+    "temperature": 22.0,
+    "humidity": 52.8
   }
 ]
