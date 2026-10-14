@@ -1834,5 +1834,14 @@
     "hum_min": 53.6,
     "hum_max": 54.8,
     "hum_avg": 54.14
+  },
+  {
+    "date": "2026-10-14",
+    "temp_min": 16.0,
+    "temp_max": 16.9,
+    "temp_avg": 16.3,
+    "hum_min": 53.5,
+    "hum_max": 54.2,
+    "hum_avg": 53.88
   }
 ]
