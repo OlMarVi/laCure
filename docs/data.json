@@ -43,5 +43,125 @@
     "timestamp": "2026-10-22 04:12:02",
     "temperature": 13.5,
     "humidity": 57.0
+  },
+  {
+    "timestamp": "2026-10-22 04:42:03",
+    "temperature": 13.5,
+    "humidity": 57.0
+  },
+  {
+    "timestamp": "2026-10-22 05:12:05",
+    "temperature": 13.5,
+    "humidity": 57.0
+  },
+  {
+    "timestamp": "2026-10-22 05:42:07",
+    "temperature": 13.5,
+    "humidity": 57.0
+  },
+  {
+    "timestamp": "2026-10-22 06:12:08",
+    "temperature": 13.5,
+    "humidity": 56.9
+  },
+  {
+    "timestamp": "2026-10-22 06:42:10",
+    "temperature": 13.4,
+    "humidity": 56.9
+  },
+  {
+    "timestamp": "2026-10-22 07:12:12",
+    "temperature": 13.3,
+    "humidity": 56.9
+  },
+  {
+    "timestamp": "2026-10-22 07:42:13",
+    "temperature": 13.3,
+    "humidity": 56.9
+  },
+  {
+    "timestamp": "2026-10-22 08:12:15",
+    "temperature": 13.3,
+    "humidity": 56.8
+  },
+  {
+    "timestamp": "2026-10-22 08:42:16",
+    "temperature": 13.3,
+    "humidity": 56.8
+  },
+  {
+    "timestamp": "2026-10-22 09:12:18",
+    "temperature": 13.3,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-10-22 09:42:20",
+    "temperature": 13.3,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-10-22 10:12:22",
+    "temperature": 13.3,
+    "humidity": 56.6
+  },
+  {
+    "timestamp": "2026-10-22 10:42:23",
+    "temperature": 13.3,
+    "humidity": 56.6
+  },
+  {
+    "timestamp": "2026-10-22 11:12:25",
+    "temperature": 13.3,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-10-22 11:42:27",
+    "temperature": 13.4,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-10-22 12:12:29",
+    "temperature": 13.4,
+    "humidity": 56.6
+  },
+  {
+    "timestamp": "2026-10-22 12:42:30",
+    "temperature": 13.4,
+    "humidity": 56.5
+  },
+  {
+    "timestamp": "2026-10-22 13:12:32",
+    "temperature": 13.4,
+    "humidity": 56.5
+  },
+  {
+    "timestamp": "2026-10-22 13:42:34",
+    "temperature": 13.3,
+    "humidity": 56.6
+  },
+  {
+    "timestamp": "2026-10-22 14:12:35",
+    "temperature": 13.3,
+    "humidity": 56.5
+  },
+  {
+    "timestamp": "2026-10-22 14:42:37",
+    "temperature": 13.3,
+    "humidity": 56.8
+  },
+  {
+    "timestamp": "2026-10-22 15:12:39",
+    "temperature": 13.3,
+    "humidity": 56.8
+  },
+  {
+    "timestamp": "2026-10-22 15:42:41",
+    "temperature": 13.3,
+    "humidity": 56.7
+  },
+  {
+    "timestamp": "2026-10-22 16:12:42",
+    "temperature": 13.3,
+    "humidity": 56.9
   }
 ]
